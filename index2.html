@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de pacientes</title>
+    <link rel="stylesheet" type="text/css" href="estilo1.css">    
+</head>
+<body>
+    <h2>Cadastro de pacientes</h2>
+    <form action="">
+            <div class="input_div">
+                    <label for="nome">Nome:</label>
+                    <input class="input_form" type="text" name="nome" required autofocus pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" placeholder="Digite seu Nome" value=""  onfocus=this.value="" />
+                </div>
+                <div class="input_div">
+                        <span>Idade:</span>
+                        <input class="input_form" type="number"  pattern="[0–100]+$" name="idade" placeholder="Digite sua idade" value="" required x-moz-errormessage="Ops, ta faltando preencher esse campo.">
+                    </div>
+        
+          
+                <div class="input_div">
+                        <span>Sexo:</span>
+                        <input type="radio" id="" name="masc" value="Masculino" required> Masculino
+                <input type="radio" name="fem" value="Feminino" required>Feminino
+                    </div>
+                <div class="input_div">
+                        <span>Peso:</span>
+                        <input class="input_form" type="number" name="peso"
+                         value="" required>
+                     </div>      
+                <div class="input_div">
+                        <span>Altura:</span>
+                            <input class="input_form" type="number" name="altura"
+                             value="" required>
+                         </div> 
+                         <div>                        
+                         <button id="adicionarDados" type="button">Adicionar Paciente</button>
+                         
+                         <!--<button id="deletarLinha" type="button">Deletar Linha</button>-->
+
+                        </div>
+
+    </form>
+    
+    <hr>
+    <table id="mytable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th>IMC</th>
+
+                
+
+            </tr>
+           
+        </thead>
+        <tbody>
+           
+        </tbody>
+    <hr>
+</table>
+   <script type="text/javascript" src="teste/adicionaPaciente.js"></script>
+   <script type="text/javascript" src="teste/paciente.js"></script>
+    
+
+</body>
+
+
+
+</html>
